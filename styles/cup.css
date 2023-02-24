@@ -1,0 +1,75 @@
+.cup-wrapper {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.cup-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-cup {
+  width: 17.625rem;
+  height: 17.125rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0.9375rem 1.25rem 1.75rem;
+}
+
+.card-cup h3 {
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.card-cup h2 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-1 {
+  background: url('../assets/cup/farinha.png') center / cover no-repeat;
+}
+
+.card-2 {
+  background: url('../assets/cup/messi.png') center / cover no-repeat;
+}
+
+.card-3 {
+  background: url('../assets/cup/brasilian-players.png') center / cover no-repeat;
+}
+
+.card-4 {
+  background: url('../assets/cup/galvao.png') center / cover no-repeat;
+}
+
+.cup .bullets {
+  display: flex;
+  justify-content: center;
+}
+
+.cup .bullets input[type="radio"] {
+  border: 2px solid var(--gray);
+}
+
+.cup .bullets input[type="radio"]:checked {
+  background: var(--text-title);
+  border-color: var(--text-title);
+}
+
+@media screen and (max-width: 768px) {
+  .card-cup {
+    min-width: 85%;
+  }
+
+  .card-1 {
+    display: none;
+  }
+}

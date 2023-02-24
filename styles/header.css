@@ -1,0 +1,148 @@
+/* Header */
+.header {
+  margin: 1.875rem 0 2.4375rem;
+}
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left-side {
+  display: flex;
+  gap: 6.875rem;
+  margin-right: 6.875rem;
+}
+
+.menu-button {
+  line-height: 0;
+  background: none;
+  border: none;
+}
+
+.menu-button img {
+  width: 22px;
+  height: 22px;
+}
+
+.header-options {
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.header-option {
+  border: none;
+  cursor: pointer;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 12px 25px 12px 22px;
+  border-radius: 23px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-option span {
+  font-size: 0.6875rem;
+  font-weight: 700;
+}
+
+.header-option img {
+  width: 22px;
+  height: 22px;
+}
+
+.logo-header {
+  margin-right: 14.825rem;
+  width: 180px;
+}
+
+.header-search {
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 14.125rem;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+.header-search input, .header-search button{
+  background: none;
+  border: none;
+  height: 100%;
+  width: auto;
+}
+
+/* Navbar */
+.header-nav {
+  margin-top: 1.4375rem;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1.6875rem;
+}
+
+
+.header-nav a {
+  min-width: 50%;
+  text-decoration: none;
+  color: var(--text-nav);
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  transition: 0.3s;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 1.1875rem;
+}
+
+.header-nav a:hover {
+  color: var(--text-title);
+  border-bottom: 3px solid var(--pink);
+}
+
+.header-nav a.selected {
+  color: var(--text-title);
+  border-bottom: 3px solid var(--pink);
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper, .header-left-side {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-width: 5rem;
+  }
+
+  .header-nav {
+    overflow: hidden;
+  }
+
+  .header-option {
+    width: 6.625rem;
+    height: 2.375rem;
+  }
+
+  .logo-header {
+    width: 127px;
+  }
+
+  .header-left-side {
+    margin-right: 0;
+    margin-left: 2.375rem;
+  }
+
+  .logo-header {
+    margin-right: 0.875rem;
+  }
+
+  .header-option:nth-child(2), .header-right-side {
+    display: none;
+  }
+}

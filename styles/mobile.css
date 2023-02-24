@@ -1,0 +1,367 @@
+/* News */
+.news-mobile {
+  display: none;
+  height: 100%;
+  margin: 1.5rem 0;
+}
+
+.news-mobile-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  display: none;
+}
+
+.news-mobile-content .container {
+  gap: 1.5rem;
+}
+
+.news-mobile-content h3 {
+  font-size: 0.840rem;
+  font-weight: 400;
+}
+
+.news-mobile-content article {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.news-mobile-content article:first-child {
+  margin-top: 0;
+}
+
+.news-mobile-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+
+/* Card / Stranger Things */
+.news-card-mobile {
+  background: url('../assets/mobile/stranger-things.png') center / cover no-repeat;
+  width: 100%;
+  height: 17.125rem;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 0.9375rem 1.25rem 1.75rem;
+}
+
+.news-card-mobile h3 {
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.news-card-mobile h2 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Ads Mobile */
+
+.banner-mobile {
+  margin: 1.5rem 0;
+  width: 100%;
+  display: none;
+}
+
+.banner-mobile .container {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-mobile img {
+  width: 100%;
+}
+
+/* Lottery e Weather-Local */
+.daily-datas-mobile {
+  display: none;
+  flex-direction: row-reverse;
+  justify-content: start;
+  width: 100%;
+  gap: 0.675rem;
+  margin-top: 1.5rem;
+  overflow-x: hidden;
+  padding: 1rem 0;
+}
+
+/* Lottery */
+.daily-datas-mobile .lottery-results {
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1.25rem;
+  width: 23.3125rem;
+  height: 11rem;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-datas-mobile .lottery-results h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.daily-datas-mobile .lottery-results h4 {
+  color: var(--text-nav);
+  font-size: 0.625rem;
+  padding: 0.5625rem 0 0.9375rem;
+}
+
+.daily-datas-mobile .numbers-result {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.3125rem;
+}
+
+.daily-datas-mobile .numbers-result div {
+  user-select: none;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+  width: 1.875rem;
+  height: 1.875rem;
+
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.daily-datas-mobile .numbers-result div:hover {
+  background: var(--yellow);
+}
+
+.daily-datas-mobile .lottery-radios {
+  margin: 0.5rem auto;
+}
+
+.daily-datas-mobile .lottery-results input[type="radio"] {
+  appearance: none;
+  border: 1px solid var(--gray);
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.daily-datas-mobile .lottery-results input[type="radio"]:checked {
+  background-color: var(--orange);
+}
+
+/* Weather */
+.daily-datas-mobile .weather-local {
+  display: flex;
+  align-items: center;
+  width: 11rem;
+  height: 11rem;
+  flex-direction: column;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1.25rem 4.3125rem 1.25rem 1.25rem;
+}
+
+.daily-datas-mobile .weather-local h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.daily-datas-mobile .weather-local h4 {
+  color: var(--text-nav);
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.daily-datas-mobile .climatic-condition h5 {
+  font-size: 0.625rem;
+  color: var(--yellow);
+}
+
+.daily-datas-mobile .climatic-condition span {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.load-more.mobile {
+  display: none;
+}
+
+.columns-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+
+.columns-mobile .column-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.columns-mobile .column-header h2 {
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+.columns-mobile .card-column {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.columns-mobile .card-column h3 {
+  font-size: 1.125rem;
+}
+
+.columns-mobile .card-column h4 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.results-game.mobile {
+  display: none;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.digital-newspaper-mobile {
+  background: url('../assets/mobile/jornal-digital/jornal-digital-bg.png') center / cover no-repeat;
+  border-radius: 15px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.125rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Newsletter */
+.newsletter-mobile {
+  background: var(--gray-white);
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18.9375rem;
+  width: 100%;
+  padding: 1.5625rem;
+}
+
+.newsletter-mobile h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.custom-input {
+  background: var(--white);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.25rem 0.25rem 1.875rem;
+  border: none;
+  height: 2.5rem;
+}
+
+.newsletter-mobile h2 span { 
+  color: var(--pink);
+}
+
+.newsletter-form-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conditions-terms {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.condition-terms input[type="checkbox"] {
+  appearance: none;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  border: 1px solid var(--checkbox-gray);
+  border-radius: 3px;
+}
+
+.condition-terms input[type="checkbox"]:checked {
+  background: var(--pink);
+}
+
+.condition-terms label {
+  font-size: 0.9375rem;
+}
+
+.condition-terms label span {
+  color: var(--pink);
+}
+
+.submit-newsletter {
+  box-shadow: 1px 2px 10px rgb(255 10 107 / 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  color: var(--white);
+  background: var(--pink);
+  font-size: 0.625rem;
+  width: 6.25rem;
+  height: 2.5rem;
+  padding: 1rem 2.25rem 0.9375rem 1.8125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .news-mobile {
+    display: flex;
+  }
+
+  .news-mobile-content {
+    display: flex;
+  }
+
+  .news-card-mobile {
+    display: flex;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+
+  .daily-datas-mobile {
+    display: flex;
+  }
+
+  .load-more.mobile {
+    display: flex;
+  }
+
+  .columns-mobile {
+    display: flex;
+  }
+
+  .results-game.mobile {
+    display: flex;
+  }
+
+  .newsletter-mobile {
+    display: flex;
+  }
+
+  .digital-newspaper-mobile {
+    display: flex;
+  }
+}

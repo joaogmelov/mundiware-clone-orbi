@@ -1,0 +1,93 @@
+.channel {
+  background-color: var(--bg-black);
+  height: 32.5625rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-obi {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.channel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  overflow: hidden;
+}
+
+.channel-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.9375rem 0 1.5625rem;
+}
+
+.button-videos {
+  color: var(--white);
+  background-color: var(--pink);
+  padding: 0.75rem 1.5625rem 0.625rem 1.125rem;
+  border-radius: 20px;
+  border: 1px solid var(--pink);
+  font-size: 0.74rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.button-shorts {
+  color: var(--text-nav);
+  background: transparent;
+  padding: 0.75rem 1.5625rem 0.625rem 1.125rem;
+  border-radius: 20px;
+  border: 1px solid var(--text-nav);
+  font-size: 0.74rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.carrousel-videos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.carrousel-videos article > div {
+  width: 24rem;
+  height: 13.625rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel-videos article button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carrousel-videos article h3 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.carrousel-videos .bg-video-1 {
+  background: url('../assets/channel/video-1.png') center / cover no-repeat;
+}
+
+.carrousel-videos .bg-video-2 {
+  background: url('../assets/channel/video-2.png') center / cover no-repeat;
+}
+
+.carrousel-videos .bg-video-3 {
+  background: url('../assets/channel/video-3.png') center / cover no-repeat;
+}
+
+.subscribe {
+  margin-top: 1rem;
+  color: var(--white);
+  display: flex;
+  gap: 0.75rem;
+}

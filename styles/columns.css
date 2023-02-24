@@ -1,0 +1,139 @@
+.columns-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  height: 32.5625rem;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.column-header h2 {
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+.card-column {
+  display: flex;
+  gap: 1.25rem;
+  width: 24.0625rem;
+}
+
+.card-column h3 {
+  font-size: 1.125rem;
+}
+
+.card-column h4, .article-amazon h3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.left-column .bullets {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.left-column .bullets input[type="radio"] {
+  border: 2px solid var(--gray);
+}
+
+.left-column .bullets input[type="radio"]:checked {
+  background: var(--text-title);
+  border-color: var(--text-title);
+}
+
+.columns-ads-kaiak {
+  background: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2.625rem;
+  border-radius: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.newsletter-title, .article-amazon span {
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-white);
+  border-radius: 15px;
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.newsletter-form h3 {
+  font-size: 1.625rem;
+  font-weight: 900;
+}
+
+.newsletter-form h4 {
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+}
+
+.custom-input {
+  background: var(--white);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.25rem 0.25rem 1.875rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.custom-input input {
+  border: none;
+  height: 100%;
+  flex: 1;
+}
+
+.re-captcha {
+  width: 13.5rem;
+}
+
+.success-subscription {
+  color: var(--pink);
+  font-size: 0.75rem;
+  margin-top: 1.125rem;
+}
+
+.article-amazon {
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .columns {
+    display: none;
+  }
+}

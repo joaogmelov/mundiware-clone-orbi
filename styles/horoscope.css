@@ -1,0 +1,51 @@
+.horoscope {
+  margin-top: 2.5rem;
+}
+
+.horoscope-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9375rem;
+  justify-content: space-between;
+  padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+  background: var(--white);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.horoscope-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horoscope-header div {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.horoscope-header span {
+  font-size: 0.75rem;
+}
+
+.signs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.signs article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signs h3 {
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .horoscope {
+    display: none;
+  }
+}
