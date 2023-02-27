@@ -297,6 +297,7 @@
   width: 6.25rem;
   height: 2.5rem;
   padding: 1rem 2.25rem 0.9375rem 1.8125rem;
+  cursor: pointer;
 }
 
 .bottom-row-4 {
@@ -323,6 +324,13 @@
   width: 11.25rem;
   font-size: 0.625rem;
   border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  color: var(--white);
+  background: var(--pink);
 }
 
 @media screen and (max-width: 1200px) {
